@@ -1,0 +1,101 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3042,         91]
+NotebookOptionsPosition[      2546,         73]
+NotebookOutlinePosition[      2958,         90]
+CellTagsIndexPosition[      2915,         87]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\:68af\:5ea6\:6cd5\:5219Wolfram\:7f16\:7a0b", "Subsubsection",
+ CellChangeTimes->{{3.8090699841224294`*^9, 
+  3.809070001687561*^9}},ExpressionUUID->"0c26c10e-a0c4-4531-89bb-\
+00d02255fc00"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"trapz", "[", 
+   RowBox[{"a_", ",", "b_", ",", "n_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"h", ",", "k", ",", "X"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"h", "=", 
+      FractionBox[
+       RowBox[{"b", "-", "a"}], "n"]}], ";", "\[IndentingNewLine]", 
+     RowBox[{
+      SubscriptBox["X", "k_"], "=", 
+      RowBox[{"a", "+", 
+       RowBox[{"k", " ", "h"}]}]}], ";", "  ", 
+     RowBox[{"(*", 
+      RowBox[{"\:6a21\:5f0f\:51fa\:73b0", "\:ff0c", 
+       RowBox[{
+        RowBox[{"\:7b49\:4ef7\:4e8eX", "[", "k_", "]"}], ":=", "..."}]}], 
+      "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"N", "[", 
+      RowBox[{
+       RowBox[{
+        FractionBox["h", "2"], 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"f", "[", "a", "]"}], "+", 
+          RowBox[{"f", "[", "b", "]"}]}], ")"}]}], "+", 
+       RowBox[{"h", 
+        RowBox[{
+         SubsuperscriptBox["\[Sum]", 
+          RowBox[{"k", "=", "1"}], 
+          RowBox[{"n", "-", "1"}]], 
+         RowBox[{"f", "[", 
+          SubscriptBox["X", "k"], "]"}]}]}]}], "]"}]}]}], "]"}]}]], "Code",
+ CellChangeTimes->{{3.7825498599355187`*^9, 3.7825500593494644`*^9}, 
+   3.782550145293251*^9, {3.782550179364561*^9, 3.782550241971389*^9}, {
+   3.7825504452117662`*^9, 3.7825504857525897`*^9}, {3.808334042443675*^9, 
+   3.8083340427754707`*^9}, 3.808334191535288*^9, {3.8083343528233013`*^9, 
+   3.8083343621035852`*^9}, {3.808338402449218*^9, 3.8083384620795126`*^9}, 
+   3.8083384947460957`*^9, {3.8083385713206515`*^9, 3.8083385829835625`*^9}, {
+   3.8212298598220663`*^9, 3.8212298634468265`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"481b97cd-fa0e-4739-955b-ff4971190a52"]
+}, Open  ]]
+},
+WindowSize->{958, 988},
+WindowMargins->{{0, Automatic}, {1073, Automatic}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:67089\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"16afd3e9-9113-421e-abd9-c9fe0f59b6bb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 196, 3, 89, "Subsubsection",ExpressionUUID->"0c26c10e-a0c4-4531-89bb-00d02255fc00"],
+Cell[779, 27, 1751, 43, 296, "Code",ExpressionUUID->"481b97cd-fa0e-4739-955b-ff4971190a52"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
