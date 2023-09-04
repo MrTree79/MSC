@@ -1,0 +1,143 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4299,        135]
+NotebookOptionsPosition[      3803,        117]
+NotebookOutlinePosition[      4220,        134]
+CellTagsIndexPosition[      4177,        131]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Quantization", " ", "of", " ", "Electrons", " ", "in", " ", "a", " ", 
+     "One"}], "-", 
+    RowBox[{"Dimensional", " ", "Infinite", " ", "Potential", " ", 
+     RowBox[{"Well", ":", "QED"}]}]}], "*)"}], 
+  RowBox[{"(*", 
+   RowBox[{"Potential", " ", "well", " ", "width", " ", "a"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"a", ":=", 
+    RowBox[{"1.0", "*", 
+     RowBox[{"10", "^", 
+      RowBox[{"-", "9"}]}]}]}], " ", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"10", "^", 
+       RowBox[{"-", "9"}]}], " ", "nm"}], ";", " ", 
+     RowBox[{
+      RowBox[{"10", "^", 
+       RowBox[{"-", "2"}]}], " ", "cm"}]}], "*)"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"Planck", " ", "constant", " ", "h"}], ";", 
+     RowBox[{"Reduced", " ", "Planck", " ", "constant", " ", "\[HBar]"}], ";", 
+     RowBox[{"Electron", " ", "mass", " ", "\[Mu]"}]}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"h", "=", 
+     RowBox[{"6.626", "*", 
+      RowBox[{"10", "^", 
+       RowBox[{"-", "34"}]}]}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"\[HBar]", "=", 
+     RowBox[{"h", "/", 
+      RowBox[{"(", 
+       RowBox[{"2", "*", "\[Pi]"}], ")"}]}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"\[Mu]", "=", 
+     RowBox[{"9.11", "*", 
+      RowBox[{"10", "^", 
+       RowBox[{"-", "31"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"One", " ", "electronvolt", " ", 
+     RowBox[{"(", 
+      RowBox[{"1", " ", "eV"}], ")"}]}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"eV", "=", 
+     RowBox[{"1.602", "*", 
+      RowBox[{"10", "^", 
+       RowBox[{"-", "19"}]}]}]}], ";"}], "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{"Quantization", " ", 
+     RowBox[{"(", 
+      RowBox[{"unit", ":", "J"}], ")"}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[CapitalDelta]E", "=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"3", "*", 
+        RowBox[{"(", 
+         RowBox[{"Pi", "^", "2"}], ")"}], "*", 
+        RowBox[{"\[HBar]", "^", "2"}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"2", "*", "\[Mu]", "*", 
+        RowBox[{"a", "^", "2"}]}], ")"}]}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Quantization", " ", 
+     RowBox[{"(", 
+      RowBox[{"unit", ":", "eV"}], ")"}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", 
+    RowBox[{"\"\<QED(eV) = \>\"", ",", 
+     RowBox[{"\[CapitalDelta]E", "/", "eV"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.9028198236654863`*^9, 3.9028199480238214`*^9}, {
+   3.902819981473468*^9, 3.902820007948284*^9}, 3.9028200393943768`*^9},
+ CellLabel->"In[36]:=",ExpressionUUID->"04392500-aa97-4be3-ab00-6f7995c76b5f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"QED(eV) = \"\>", "\[InvisibleSpace]", "1.12811465772066`"}],
+  SequenceForm["QED(eV) = ", 1.12811465772066],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9028200086270123`*^9, 3.9028200473769627`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[36]:=",ExpressionUUID->"24d04d33-c154-48c7-9086-\
+7c036cd7958a"]
+}, Open  ]]
+},
+WindowSize->{804, 642},
+WindowMargins->{{Automatic, 121.5}, {Automatic, 39.5}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (2022\:5e748\:670822\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c804e2ec-ba7d-4d9a-bb7d-29d0830139b7"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2841, 82, 364, "Input",ExpressionUUID->"04392500-aa97-4be3-ab00-6f7995c76b5f"],
+Cell[3424, 106, 363, 8, 22, "Print",ExpressionUUID->"24d04d33-c154-48c7-9086-7c036cd7958a"]
+}, Open  ]]
+}
+]
+*)
+
